@@ -15,6 +15,14 @@ header {
     
 }
 
+/* ---------------------------- */
+/*        Menu superior */
+/* ---------------------------- */
+
+.menu-chico{
+    display: none;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -56,6 +64,10 @@ label {
     color: #929697;
 }
 
+/* ---------------------------- */
+/*        Slide de Fotos */
+/* ---------------------------- */
+
 .carousel {
     width: 100%; /* Cambiar 800px al ancho deseado */
     margin: 0 auto; /* Para centrar horizontalmente el carrusel */
@@ -92,6 +104,10 @@ label {
     color: white;
     border-color: white;
   }
+  
+/* ---------------------------- */
+/*      Seccion Oradores */
+/* ---------------------------- */
 
 #oradores {
     background-color: #ffffff;
@@ -153,6 +169,24 @@ label {
     font-size: 12px;
 }
 
+.gray {
+    margin-left: 20px;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #6d747d;
+    font-size: 12px;
+}
+
+.red {
+    margin-left: -20px;
+    padding-inline-start: 4px;
+    padding-top: 0;
+    padding-bottom: 1px;
+    background-color: #db3545;
+    font-size: 12px;
+}
+
 .titulo {
     margin: 20px;
     margin-top: 0;
@@ -166,8 +200,15 @@ label {
     margin: 20px 20px;
 }
 
+/* ---------------------------- */
+/*    Seccion "Lugar y Fecha" */
+/* ---------------------------- */
+
 #lugar {
     width: 100%;
+}
+#lugar1{
+    display: none;
 }
 
 .content {
@@ -199,7 +240,9 @@ h2 {
     margin: 0;
     margin-bottom: 15px;
 }
-
+/* ---------------------------- */
+/*    Formulario para Orador */
+/* ---------------------------- */
 .container-orador {
     max-width: 800px;
     margin: 0 auto;
@@ -289,7 +332,9 @@ form input[type="submit"] {
     color: #707e88;;
 
 }
-
+/* ---------------------------- */
+/*        Pie de pagina */
+/* ---------------------------- */
 footer {
     background: linear-gradient(to right, #1c3846, #1e5371);
     width: 100%;
@@ -305,7 +350,7 @@ footer {
     margin-right: 50%;
 }
 
-ul {
+.pie {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -314,18 +359,434 @@ ul {
     text-align: justify;
 }
   
-li {
+.elemento {
     margin: 0 ;
     width: 70px;
     text-align: end;
     line-height: 1.2;
 }
   
-.elemento {
+.elem {
     margin: 0px;
     margin-top: 10px;
     color: #ffffff;
     text-decoration: none;
     font-size: 12px;
 }
+
+/* ---------------------------- */
+/*        Configuracion Menú */
+/* ---------------------------- */
+
+@media (max-width: 768px){
+    header{
+        padding: 10;
+        font-size: 11px;
+    }
+
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -30px;
+        font-size: 12px;
+    }
+
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-15px, 20px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(0px, 20px);
+    }
+
+    .btn-move{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+   
+}
+
+
+@media (max-width: 425px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 425px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -150px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-120px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(-10px, -21px);
+    }
+
+    .row{
+        transform: translate(-20px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 375px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 375px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -175px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-120px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(-10px, -21px);
+    }
+
+    .row{
+        transform: translate(-20px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 320px){
+    
+    header{
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+    .label-menu{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-chico{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-decoration: none;
+        list-style: none;
+    }
+    .menu.chi {
+        font-size: 50px;
+    }
+
+    .carousel-item{
+        height: 100%;
+    }
+
+    .carousel-caption{
+        font-size: 10px;
+    }
+    .filtro{
+        width: 320px;
+        height: 320px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        display: none;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .intro{
+        width: 300px;
+        height: 80px;
+        padding: 0;
+        margin-top: 0;
+        margin-left: -175px;
+    }
+    .btn-transparent{
+        margin: -10px;
+        font-size: 10px;
+        transform: translate(-100px);
+
+    }
+    .btn-green{
+        margin: 0;
+        font-size: 10px;
+        transform: translate(10px, -21px);
+    }
+
+    .row{
+        transform: translate(-15px);
+    }
+
+    #lugar{
+        display: none;
+    }
+
+    #lugar1{
+        display: block;
+        background-color: #353a40;
+    }
+
+    .honolulu{
+        width: 100%;
+        float: none;
+    }
+
+    .conten{
+        margin-left: 10px;
+    }
+
+    .btn-sabermas{
+        transform: translate(10px, -10px);
+    }
+
+    .nom{
+        margin-left: 10px;
+    }
+    .last{
+        width: 60%;
+        margin-right: 10px;
+    }
+
+    .msg{
+        width: 94%;
+        margin-left: 10px;
+    }
+    .postdata{
+        margin-left: 10px ;
+    }
+
+    .submit{
+        width: 94%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 1440){
+    
+}
+
 

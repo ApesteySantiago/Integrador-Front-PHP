@@ -13,9 +13,9 @@
   <header>
     <div class="icono">
         <img src="img/codoacodo.png" alt="codo a codo">
-        <label>Conf Bs As</label>
+        <label class="label-menu">Conf Bs As</label>
     </div>
-    <nav>
+    <nav class="menu">
         <ul>
             <li><a href="#conferencia">La conferencia</a></li>
             <li class="inactivo"><a href="#oradores">Los oradores</a></li>
@@ -24,6 +24,21 @@
             <li class="compra"><a href="#Comprar">Comprar tickets</a></li>
          </ul>
        </nav> 
+
+    <nav class="menu-chico">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menu-chi" data-bs-toggle="dropdown" href="#dropdown-menu" role="button" aria-expanded="false">☰</a>
+        <ul class="dropdown-menu">
+          <li class="inactivo"><a href="#conferencia">La conferencia</a></li>
+            <li class="inactivo"><a href="#oradores">Los oradores</a></li>
+            <li class="inactivo"><a href="#lugar">El lugar y la fecha</a></li>
+            <li class="inactivo"><a href="#conviertete">Conviertete en orador</a></li>
+            <li class="compra"><a href="#Comprar">Comprar tickets</a></li>
+        </ul>
+      </li>
+
+    </nav>
+
   </header>
 
   <section id="conferencia">
@@ -35,7 +50,7 @@
             <img src="img/ba1.jpg" class="filtro d-block w-100" alt="Buenos Aires 1">
             <div class="carousel-caption">
             <h1>Conf Bs As</h1>
-            <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+            <p class="intro">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
             conocimiento y experiencia de los expertos que estan crando el futuro de Internet.
             Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
             que tenemos para ti. Te esperamos!
@@ -48,7 +63,7 @@
             <img src="img/ba2.jpg" class="filtro d-block w-100" alt="Buenos Aires 2">
             <div class="carousel-caption class="d-flex justify-content-end mt-3"">
               <h1>Conf Bs As</h1>
-              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+              <p class="intro">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
               conocimiento y experiencia de los expertos que estan crando el futuro de Internet.
               Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
               que tenemos para ti. Te esperamos!
@@ -61,7 +76,7 @@
             <img src="img/ba3.jpg" class="filtro d-block w-100" alt="Buenos Aires 3">
             <div class="carousel-caption">
               <h1>Conf Bs As</h1>
-              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+              <p class="intro">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
               conocimiento y experiencia de los expertos que estan crando el futuro de Internet.
               Ven a conocer miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
               que tenemos para ti. Te esperamos!
@@ -109,8 +124,8 @@
           <div class="reajuste col-sm-4">
             <img src="img/ada.jpeg" class="img-fluid" alt="Imagen 3">
             <div class="epigrafe">
-              <div class="box yellow "><b>JavaScript</b></div>
-              <div class="box blue"><b>React</b></div>
+              <div class="box gray "><b>Negocios</b></div>
+              <div class="box red"><b>Startups</b></div>
               <div class="titulo">Steve Jobs</div>
               <div class="parrafo"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, error fugit commodi possimus sequi quis ullam id inventore repellat, pariatur quisquam reprehenderit deleniti facilis vel! Reiciendis modi quos voluptatibus, illo, maiores, deleniti odio temporibus nostrum officia beatae cumque maxime nisi laudantium esse quo nemo amet.</p></div>
             </div>
@@ -130,9 +145,23 @@
             Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
             se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
             formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p>
-          <a href="#" class="btn btn-transparent">Conocé más</a>
+          <a href="#" class="btn btn-transparent btn-move">Conocé más</a>
         </div>
       </section>
+    </section>
+
+    <section id="lugar1">
+      <section class="content">
+        <img class="honolulu" src="img/honolulu.jpg" alt="Descripción de la imagen">
+      </section>
+      <div class="conten">
+        <h2>Bs As - Octubre</h2>
+        <p class="sinopsis">Buenos Aires es la provincia y localidad más grande de Argentina, en los Estados Unidos.
+          Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
+          se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han
+          formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<sup>2</sup> de superficie).</p>
+        <a href="#" class="btn btn-transparent btn-sabermas">Conocé más</a>
+      </div>
     </section>
     
     <section id="conviertete" >
@@ -163,14 +192,14 @@
 
     <footer>
       <div class="enlaces">
-        <ul>
-          <li><a class="elemento" href="#">Preguntas frecuentes</a></li>
-          <li><a class="elemento" href="#">Contáctanos</a></li>
-          <li><a class="elemento" href="#">Prensa</a></li>
-          <li><a class="elemento" href="#">Conferencias</a></li>
-          <li><a class="elemento" href="#">Términos y condiciones</a></li>
-          <li><a class="elemento" href="#">Privacidad</a></li>
-          <li><a class="elemento" href="#">Estudiantes</a></li>
+        <ul class="pie">
+          <li class="elemento"><a class="elem" href="#">Preguntas frecuentes</a></li>
+          <li class="elemento"><a class="elem" href="#">Contáctanos</a></li>
+          <li class="elemento"><a class="elem" href="#">Prensa</a></li>
+          <li class="elemento"><a class="elem" href="#">Conferencias</a></li>
+          <li class="elemento"><a class="elem" href="#">Términos y condiciones</a></li>
+          <li class="elemento"><a class="elem" href="#">Privacidad</a></li>
+          <li class="elemento"><a class="elem" href="#">Estudiantes</a></li>
         </ul>
       </div>
     </footer>
