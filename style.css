@@ -166,40 +166,36 @@ label {
     margin: 20px 20px;
 }
 
-.lugar-fecha {
-    display: flex;
-    width: 200%;
-    
+#lugar {
+    width: 100%;
 }
 
-.container-izquierda {
-    float: left;
+.content {
+    display: flex;
+    align-items: top;
+    margin-bottom: 20px;
+    background-color: #353a40;
+  }
+  
+.honolulu {
     width: 50%;
     height: auto;
-    padding: 0px;
-    background-color: #353a40;
-}
-
-.img-izquierda {
-    padding-top: 0;
-    width: 50%;
-}
-
-.container-derecha {
-    width: 50%;
-    text-align: left;
-    float: right;
+    margin-right: 15px;
+    float: left;
+  }
+  
+h2 {
     color: #ffffff;
-}
-
-.encabezado {
-    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 500;
     margin-top: 10px;
-    font-size: 20px;
-    font-weight: 580;
-}
-
+    margin-bottom: 10px;
+  }
+  
 .sinopsis {
+    color: #ffffff;
     font-size: 15px;
-    font-weight: 400;
-}
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 15px;
+  }
